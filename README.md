@@ -4,7 +4,7 @@ entity - repository - controller - service의 구조로 이루어져있습니다
 
 게시판과 게시글에 대한 작업은 ArticleController와 ArticleService에서 한꺼번에 처리했으며 댓글은 CommentController와 CommentService에서 처리했습니다. 
 
-첫 실행시 데이터를 어느정도 가지고있기위해 data.sql을 통해 데이터를 넣어줬습니다. 이후는 ```jpa.hiberante.ddl-auto: update``` 설정을 통해 데이터 유지를 했습니다.
+첫 실행시 데이터를 어느정도 가지고있기위해 data.sql을 통해 데이터를 넣어줬습니다. 그리고 ```jpa.hiberante.ddl-auto: create``` 설정을 했습니다.
 ## 2. 게시판 기능
 최초 실행시 : 처음 ```/board```에 접속하게 되면 전체 게시판으로 접속하게 되며, 상단에는 게시판의 목록과 그 아래에는 전체 게시글이 내림차순으로 보여지게됩니다. 
 

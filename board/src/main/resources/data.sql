@@ -33,3 +33,8 @@ VALUES
     (7,7,'돈까스 먹는게 나을거같아요','katsulover'),
     (8,8,'신청하게 해주세요...','submit'),
     (8,8,'아...','ah');
+
+INSERT INTO search(id,sch)
+VALUES
+    (1,'제목'),
+    (2,'내용');

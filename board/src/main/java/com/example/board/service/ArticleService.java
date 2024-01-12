@@ -5,7 +5,9 @@ import com.example.board.entity.Board;
 import com.example.board.repo.ArticleRepository;
 import com.example.board.repo.BoardRepository;
 import com.example.board.repo.CommentRepository;
+import com.example.board.repo.SearchRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.List;
 public class ArticleService {
     private final ArticleRepository articleRepository;
     private final BoardRepository boardRepository;
+    private final SearchRepository searchRepository;
 
     // 모든 게시판 목록을 불러오는 메서드
     public List<Board> getBoardAll(){return boardRepository.findAll();}
